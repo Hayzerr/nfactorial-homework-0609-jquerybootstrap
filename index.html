@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Music player</title>
+</head>
+<div class = "container">
+    <h1> Music player </h1>
+    
+    <video autoplay muted loop id = "myVideo">
+        <source src = "Videos/Fon.mp4" type = "video/mp4">
+    </video>
+    
+    <div class = "music-container">    
+        <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container">
+                <div class="progress"></div>   
+            </div>
+        </div>
+        <audio src = "musics/hey.mp3" id = "audio"></audio>
+        <div class = "img-container">
+            <img src = "/Images/hey.jpg" alt = "music-cover" id = "cover">
+        </div>
+        <div class="navigation">
+            <button id="prev" class = "action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class ="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class = "action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+            <button id = "videoBtn" class = "action-btn action-btn-big">
+                <i class="fa-solid fa-circle-stop"></i> 
+            </button>
+        </div>
+        <div class = "volume-container">
+            <div class = "volume">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src = "script.js"> </script>
+</div>
+</html>
